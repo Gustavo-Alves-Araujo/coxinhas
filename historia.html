@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nossa História — Bianquinha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans bg-white text-stone-900 antialiased">
+
+  <!-- HEADER -->
+  <header class="bg-stone-950 sticky top-0 z-50 border-b border-stone-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="font-display text-xl text-white font-bold tracking-wide">
+          Bianquinha
+        </a>
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="text-stone-300 hover:text-white text-sm font-medium transition-colors duration-200">Início</a>
+          <a href="cardapio.html" class="text-stone-300 hover:text-white text-sm font-medium transition-colors duration-200">Cardápio</a>
+          <a href="historia.html" class="text-amber-400 text-sm font-medium">Nossa História</a>
+          <a href="contato.html" class="text-stone-300 hover:text-white text-sm font-medium transition-colors duration-200">Contato</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a href="https://wa.me/5511999999999" target="_blank"
+            class="bg-amber-500 hover:bg-amber-400 text-stone-950 text-sm font-bold px-5 py-2.5 rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-amber-500/30">
+            Pedir Agora
+          </a>
+          <button class="md:hidden text-stone-400 hover:text-white p-1" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-stone-800 bg-stone-950 px-4 py-4 flex flex-col gap-4">
+      <a href="index.html" class="text-stone-300 hover:text-white text-sm font-medium">Início</a>
+      <a href="cardapio.html" class="text-stone-300 hover:text-white text-sm font-medium">Cardápio</a>
+      <a href="historia.html" class="text-amber-400 text-sm font-medium">Nossa História</a>
+      <a href="contato.html" class="text-stone-300 hover:text-white text-sm font-medium">Contato</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="bg-gradient-to-br from-stone-950 via-red-950 to-stone-900 py-24">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="text-amber-400 text-sm font-bold tracking-widest uppercase">Uma história de amor e sabor</span>
+      <h1 class="font-display text-6xl font-bold text-white mt-4 leading-tight">
+        Por que cada coxinha<br/>tem um propósito.
+      </h1>
+      <p class="text-stone-400 text-xl mt-6 leading-relaxed max-w-2xl mx-auto">
+        Por trás da crocância e do recheio cremoso, existe uma mulher determinada, uma receita de família e um filho que está chegando.
+      </p>
+    </div>
+  </section>
+
+  <!-- BIANCA'S STORY -->
+  <section class="py-24 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="bg-gradient-to-br from-amber-50 to-orange-50 rounded-3xl p-12 flex items-center justify-center min-h-80">
+          <div class="text-center">
+            <div class="w-28 h-28 bg-amber-500 rounded-full mx-auto flex items-center justify-center mb-6">
+              <span class="font-display text-5xl font-black text-stone-950">B</span>
+            </div>
+            <p class="font-display text-2xl font-bold text-stone-800">Bianca</p>
+            <p class="text-stone-500 text-sm mt-1">A Bianquinha por trás de tudo</p>
+          </div>
+        </div>
+        <div>
+          <span class="text-amber-600 text-sm font-bold tracking-widest uppercase">Sobre a Bianca</span>
+          <h2 class="font-display text-4xl font-bold text-stone-900 mt-3 leading-tight">
+            A receita de família que virou missao.
+          </h2>
+          <p class="text-stone-600 mt-6 text-lg leading-relaxed">
+            Bianca cresceu vendo a mãe preparar coxinhas para eventos da família. O segredo sempre foi a massa — fininha, bem sovada, frita no ponto certo. Com o tempo, ela aperfeiçoou a receita e adicionou o toque que é só dela: o recheio cremoso e bem temperado que ninguém consegue resistir.
+          </p>
+          <p class="text-stone-600 mt-4 text-lg leading-relaxed">
+            O que começou como um passatempo virou um negócio feito com alma. Cada coxinha é produzida artesanalmente, com ingredientes frescos escolhidos a dedo e muito cuidado no preparo.
+          </p>
+          <div class="mt-8 flex flex-col sm:flex-row gap-6">
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 bg-amber-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="font-semibold text-stone-900">Ingredientes naturais</p>
+                <p class="text-stone-500 text-sm">Sem conservantes ou artificiais</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <div>
+                <p class="font-semibold text-stone-900">Fritas na hora</p>
+                <p class="text-stone-500 text-sm">Sempre no ponto certo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APOLO'S STORY -->
+  <section class="py-24 bg-stone-950">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <span class="text-amber-400 text-sm font-bold tracking-widest uppercase">O Motivo Especial</span>
+          <h2 class="font-display text-4xl font-bold text-white mt-3 leading-tight">
+            Apolo — o filho mais<br/>esperado da Bianca.
+          </h2>
+          <p class="text-stone-400 mt-6 text-lg leading-relaxed">
+            Apolo é o filho da Bianca, e ele está chegando. Para preparar a chegada dele do jeito certo — enxoval, maternidade, berço, fraldas e tudo que ele vai precisar — Bianca resolveu fazer o que faz de melhor: coxinhas artesanais com toda sua dedicação.
+          </p>
+          <p class="text-stone-400 mt-4 text-lg leading-relaxed">
+            Cada pedido que você faz é uma contribuição real para essa historia. Você não só come uma das melhores coxinhas da cidade — você faz parte de algo maior.
+          </p>
+          <div class="mt-10 bg-stone-900 border border-stone-800 rounded-2xl p-6">
+            <p class="text-amber-400 font-semibold text-sm tracking-wide uppercase mb-2">O impacto do seu pedido</p>
+            <p class="text-white text-lg font-medium leading-relaxed">
+              Cada coxinha vendida vai direto para o fundo do enxoval do Apolo. Um pedido simples, um gesto de carinho enorme.
+            </p>
+          </div>
+        </div>
+        <div class="bg-gradient-to-br from-stone-900 to-red-950 rounded-3xl p-12 flex items-center justify-center min-h-80 border border-stone-800">
+          <div class="text-center">
+            <div class="w-28 h-28 bg-red-700 rounded-full mx-auto flex items-center justify-center mb-6">
+              <span class="font-display text-5xl font-black text-white">A</span>
+            </div>
+            <p class="font-display text-2xl font-bold text-white">Apolo</p>
+            <p class="text-stone-400 text-sm mt-1">O motivo por trás de cada coxinha</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="py-20 bg-amber-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-14">
+        <span class="text-amber-600 text-sm font-bold tracking-widest uppercase">O que nos move</span>
+        <h2 class="font-display text-5xl font-bold text-stone-900 mt-3">Nossos valores</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-2xl p-8 border border-amber-100 hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-amber-500 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-stone-950" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-display text-xl font-bold text-stone-900 mb-3">Amor em cada massa</h3>
+          <p class="text-stone-600 leading-relaxed text-sm">Não existe atalho na nossa cozinha. Cada passo é feito com cuidado porque sabemos que você vai sentir a diferença.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 border border-amber-100 hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-red-700 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+            </svg>
+          </div>
+          <h3 class="font-display text-xl font-bold text-stone-900 mb-3">Qualidade sem abrir mao</h3>
+          <p class="text-stone-600 leading-relaxed text-sm">Ingredientes frescos, óleo limpo, ponto certinho. Sem economizar onde importa. É a qualidade que faz o cliente voltar.</p>
+        </div>
+        <div class="bg-white rounded-2xl p-8 border border-amber-100 hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-stone-900 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-display text-xl font-bold text-stone-900 mb-3">Comunidade que apoia</h3>
+          <p class="text-stone-600 leading-relaxed text-sm">Cada cliente vira parte da historia. Você não está só comprando uma coxinha — está ajudando uma familia a crescer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-24 bg-gradient-to-br from-red-700 to-red-900">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="font-display text-5xl font-bold text-white leading-tight">Faça parte dessa historia.</h2>
+      <p class="text-red-200 text-xl mt-6 leading-relaxed">Um pedido de coxinha. Uma contribuição real. Uma história linda por trás.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mt-10">
+        <a href="cardapio.html"
+          class="bg-white hover:bg-amber-50 text-red-700 font-bold text-lg px-10 py-5 rounded-full transition-all duration-200 hover:shadow-2xl hover:-translate-y-1 text-center">
+          Ver o Cardápio
+        </a>
+        <a href="https://wa.me/5511999999999" target="_blank"
+          class="border-2 border-white/40 hover:border-white text-white font-bold text-lg px-10 py-5 rounded-full transition-all duration-200 text-center">
+          Pedir pelo WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-stone-950 py-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div class="md:col-span-2">
+          <p class="font-display text-2xl text-white font-bold">Bianquinha</p>
+          <p class="text-stone-400 mt-3 text-sm leading-relaxed max-w-xs">Coxinhas artesanais feitas com amor e propósito. Cada mordida apoia uma história bonita.</p>
+        </div>
+        <div>
+          <p class="text-white font-semibold mb-4">Páginas</p>
+          <div class="flex flex-col gap-3">
+            <a href="index.html" class="text-stone-400 hover:text-white text-sm transition-colors">Início</a>
+            <a href="cardapio.html" class="text-stone-400 hover:text-white text-sm transition-colors">Cardápio</a>
+            <a href="historia.html" class="text-stone-400 hover:text-white text-sm transition-colors">Nossa História</a>
+            <a href="contato.html" class="text-stone-400 hover:text-white text-sm transition-colors">Contato</a>
+          </div>
+        </div>
+        <div>
+          <p class="text-white font-semibold mb-4">Contato</p>
+          <div class="flex flex-col gap-3">
+            <a href="https://wa.me/5511999999999" target="_blank" class="text-stone-400 hover:text-white text-sm transition-colors">WhatsApp</a>
+            <a href="contato.html" class="text-stone-400 hover:text-white text-sm transition-colors">Como pedir</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-stone-800 mt-12 pt-8">
+        <p class="text-stone-500 text-sm text-center">Bianquinha — Coxinhas Artesanais. Feito com amor para o Apolo.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
