@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cardápio — Bianquinha</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans bg-white text-stone-900 antialiased">
+
+  <!-- HEADER -->
+  <header class="bg-stone-950 sticky top-0 z-50 border-b border-stone-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="font-display text-xl text-white font-bold tracking-wide">
+          Bianquinha
+        </a>
+        <nav class="hidden md:flex items-center gap-8">
+          <a href="index.html" class="text-stone-300 hover:text-white text-sm font-medium transition-colors duration-200">Início</a>
+          <a href="cardapio.html" class="text-amber-400 text-sm font-medium">Cardápio</a>
+          <a href="historia.html" class="text-stone-300 hover:text-white text-sm font-medium transition-colors duration-200">Nossa História</a>
+          <a href="contato.html" class="text-stone-300 hover:text-white text-sm font-medium transition-colors duration-200">Contato</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a href="https://wa.me/5511999999999" target="_blank"
+            class="bg-amber-500 hover:bg-amber-400 text-stone-950 text-sm font-bold px-5 py-2.5 rounded-full transition-all duration-200 hover:shadow-lg hover:shadow-amber-500/30">
+            Pedir Agora
+          </a>
+          <button class="md:hidden text-stone-400 hover:text-white p-1" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-stone-800 bg-stone-950 px-4 py-4 flex flex-col gap-4">
+      <a href="index.html" class="text-stone-300 hover:text-white text-sm font-medium">Início</a>
+      <a href="cardapio.html" class="text-amber-400 text-sm font-medium">Cardápio</a>
+      <a href="historia.html" class="text-stone-300 hover:text-white text-sm font-medium">Nossa História</a>
+      <a href="contato.html" class="text-stone-300 hover:text-white text-sm font-medium">Contato</a>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <section class="bg-gradient-to-br from-stone-950 to-stone-900 py-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <span class="text-amber-400 text-sm font-bold tracking-widest uppercase">Opções para todos os gostos</span>
+      <h1 class="font-display text-6xl font-bold text-white mt-4">Nosso Cardápio</h1>
+      <p class="text-stone-400 text-xl mt-4 max-w-2xl mx-auto leading-relaxed">Coxinhas artesanais com recheios generosos, massa dourada e fritas na hora do seu pedido.</p>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Tradicionais -->
+      <div class="mb-20">
+        <div class="flex items-center gap-4 mb-10">
+          <div>
+            <h2 class="font-display text-3xl font-bold text-stone-900">Tradicionais</h2>
+            <div class="w-10 h-1 bg-amber-500 rounded mt-2"></div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <div class="bg-white border border-stone-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div class="h-44 bg-gradient-to-br from-amber-100 to-orange-100 relative overflow-hidden flex items-end p-4">
+              <span class="font-display text-8xl font-black text-amber-200/60 leading-none select-none absolute right-3 bottom-1">T</span>
+              <span class="relative z-10 bg-red-700 text-white text-xs font-bold px-3 py-1 rounded-full">Mais Pedida</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display text-xl font-bold text-stone-900">Coxinha Tradicional</h3>
+              <p class="text-stone-500 text-sm mt-2 leading-relaxed">Frango desfiado com requeijão cremoso. Massa fininha, dourada e crocante por fora.</p>
+              <div class="flex items-center justify-between mt-4 pt-4 border-t border-stone-100">
+                <div>
+                  <span class="text-2xl font-bold text-amber-600">R$ 5,00</span>
+                  <span class="text-stone-400 text-xs ml-1">/ unidade</span>
+                </div>
+                <a href="https://wa.me/5511999999999" target="_blank" class="bg-stone-900 hover:bg-stone-700 text-white text-sm font-semibold px-4 py-2 rounded-full transition-colors">Pedir</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white border border-stone-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div class="h-44 bg-gradient-to-br from-yellow-50 to-yellow-100 relative overflow-hidden flex items-end p-4">
+              <span class="font-display text-8xl font-black text-yellow-200/70 leading-none select-none absolute right-3 bottom-1">Q</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display text-xl font-bold text-stone-900">Coxinha de Queijo</h3>
+              <p class="text-stone-500 text-sm mt-2 leading-relaxed">Catupiry com queijo derretido que estica a cada mordida. Irresistível.</p>
+              <div class="flex items-center justify-between mt-4 pt-4 border-t border-stone-100">
+                <div>
+                  <span class="text-2xl font-bold text-amber-600">R$ 6,00</span>
+                  <span class="text-stone-400 text-xs ml-1">/ unidade</span>
+                </div>
+                <a href="https://wa.me/5511999999999" target="_blank" class="bg-stone-900 hover:bg-stone-700 text-white text-sm font-semibold px-4 py-2 rounded-full transition-colors">Pedir</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white border border-stone-200 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            <div class="h-44 bg-gradient-to-br from-red-50 to-red-100 relative overflow-hidden flex items-end p-4">
+              <span class="font-display text-8xl font-black text-red-200/70 leading-none select-none absolute right-3 bottom-1">P</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display text-xl font-bold text-stone-900">Coxinha Picante</h3>
+              <p class="text-stone-500 text-sm mt-2 leading-relaxed">Frango com pimenta vermelha e molho especial da Bianca. Para os corajosos.</p>
+              <div class="flex items-center justify-between mt-4 pt-4 border-t border-stone-100">
+                <div>
+                  <span class="text-2xl font-bold text-amber-600">R$ 6,00</span>
+                  <span class="text-stone-400 text-xs ml-1">/ unidade</span>
+                </div>
+                <a href="https://wa.me/5511999999999" target="_blank" class="bg-stone-900 hover:bg-stone-700 text-white text-sm font-semibold px-4 py-2 rounded-full transition-colors">Pedir</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Combos -->
+      <div>
+        <div class="flex items-center gap-4 mb-10">
+          <div>
+            <h2 class="font-display text-3xl font-bold text-stone-900">Combos</h2>
+            <div class="w-10 h-1 bg-red-700 rounded mt-2"></div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+          <div class="bg-stone-950 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+            <div class="h-44 bg-gradient-to-br from-red-900 to-red-950 relative overflow-hidden flex items-end p-6">
+              <span class="font-display text-7xl font-black text-red-800/50 leading-none select-none absolute right-4 bottom-2">6x</span>
+              <span class="relative z-10 bg-amber-500 text-stone-950 text-xs font-bold px-3 py-1 rounded-full">Economia de R$ 6,00</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display text-xl font-bold text-white">Combo Apolo</h3>
+              <p class="text-stone-400 text-sm mt-2 leading-relaxed">6 coxinhas à sua escolha + molho de alho especial da casa.</p>
+              <div class="flex items-center justify-between mt-4 pt-4 border-t border-stone-800">
+                <div>
+                  <span class="text-2xl font-bold text-amber-400">R$ 30,00</span>
+                  <span class="text-stone-500 text-xs ml-1">/ combo</span>
+                </div>
+                <a href="https://wa.me/5511999999999" target="_blank" class="bg-amber-500 hover:bg-amber-400 text-stone-950 text-sm font-bold px-4 py-2 rounded-full transition-colors">Pedir</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-stone-950 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-1">
+            <div class="h-44 bg-gradient-to-br from-amber-900 to-stone-900 relative overflow-hidden flex items-end p-6">
+              <span class="font-display text-7xl font-black text-amber-900/50 leading-none select-none absolute right-4 bottom-2">12x</span>
+              <span class="relative z-10 bg-amber-500 text-stone-950 text-xs font-bold px-3 py-1 rounded-full">Melhor custo-beneficio</span>
+            </div>
+            <div class="p-6">
+              <h3 class="font-display text-xl font-bold text-white">Duzia do Apolo</h3>
+              <p class="text-stone-400 text-sm mt-2 leading-relaxed">12 coxinhas sortidas + 2 molhos da Bianca + muito carinho em cada uma.</p>
+              <div class="flex items-center justify-between mt-4 pt-4 border-t border-stone-800">
+                <div>
+                  <span class="text-2xl font-bold text-amber-400">R$ 55,00</span>
+                  <span class="text-stone-500 text-xs ml-1">/ combo</span>
+                </div>
+                <a href="https://wa.me/5511999999999" target="_blank" class="bg-amber-500 hover:bg-amber-400 text-stone-950 text-sm font-bold px-4 py-2 rounded-full transition-colors">Pedir</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-amber-50 border-t border-amber-100">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="font-display text-4xl font-bold text-stone-900">Escolheu o que vai pedir?</h2>
+      <p class="text-stone-600 text-lg mt-4">Mande o seu pedido direto pelo WhatsApp e a Bianca cuida do resto.</p>
+      <a href="https://wa.me/5511999999999" target="_blank"
+        class="inline-block mt-8 bg-stone-900 hover:bg-stone-700 text-white font-bold text-lg px-10 py-4 rounded-full transition-all duration-200 hover:shadow-xl hover:-translate-y-1">
+        Fazer Pedido pelo WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-stone-950 py-16 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div class="md:col-span-2">
+          <p class="font-display text-2xl text-white font-bold">Bianquinha</p>
+          <p class="text-stone-400 mt-3 text-sm leading-relaxed max-w-xs">Coxinhas artesanais feitas com amor e propósito. Cada mordida apoia uma história bonita.</p>
+        </div>
+        <div>
+          <p class="text-white font-semibold mb-4">Páginas</p>
+          <div class="flex flex-col gap-3">
+            <a href="index.html" class="text-stone-400 hover:text-white text-sm transition-colors">Início</a>
+            <a href="cardapio.html" class="text-stone-400 hover:text-white text-sm transition-colors">Cardápio</a>
+            <a href="historia.html" class="text-stone-400 hover:text-white text-sm transition-colors">Nossa História</a>
+            <a href="contato.html" class="text-stone-400 hover:text-white text-sm transition-colors">Contato</a>
+          </div>
+        </div>
+        <div>
+          <p class="text-white font-semibold mb-4">Contato</p>
+          <div class="flex flex-col gap-3">
+            <a href="https://wa.me/5511999999999" target="_blank" class="text-stone-400 hover:text-white text-sm transition-colors">WhatsApp</a>
+            <a href="contato.html" class="text-stone-400 hover:text-white text-sm transition-colors">Como pedir</a>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-stone-800 mt-12 pt-8">
+        <p class="text-stone-500 text-sm text-center">Bianquinha — Coxinhas Artesanais. Feito com amor para o Apolo.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
